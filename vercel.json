@@ -6,9 +6,6 @@
     { "src": "script.js", "use": "@vercel/static" },
     { "src": "assets/*", "use": "@vercel/static" }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
   "env": {
     "NODE_ENV": "production",
     "INTERNAL_CHECK": "d41d8cd98f00b204e9800998ecf8427e"
