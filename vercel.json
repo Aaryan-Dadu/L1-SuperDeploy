@@ -4,7 +4,11 @@
       { "src": "index.html", "use": "@vercel/static" }
     ],
     "routes": [
-      { "src": ".*", "dest": "/index.html" }
+      {
+        "src": "/(.*)",
+        "has": [{ "type": "missing", "missing": true }],
+        "dest": "/index.html"
+      }
     ],
     "env": {
       "NODE_ENV": "production",
